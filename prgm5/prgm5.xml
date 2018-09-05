@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/css" href='prgm5.css' ?>
+<StudentList>
+	<Student>
+		<name>Abcd</name>
+		<usn>1CR15CS001</usn>
+		<college-name>CMRIT</college-name>
+		<branch>CSE</branch>
+		<year>2016</year>
+		<email>abcd@cmrit.ac.in</email>
+	</Student>
+	<Student>
+		<name>Ramesh</name>
+		<usn>1CR15CS002</usn>
+		<college-name>CMRIT</college-name>
+		<branch>CSE</branch>
+		<year>2016</year>
+		<email>ramesh@cmrit.ac.in</email>
+	</Student>
+	<Student>
+		<name>Suresh</name>
+		<usn>1CR15CS003</usn>
+		<college-name>CMRIT</college-name>
+		<branch>CSE</branch>
+		<year>2016</year>
+		<email>suresh@cmrit.ac.in</email>
+	</Student>
+</StudentList>

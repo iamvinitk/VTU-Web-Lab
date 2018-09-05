@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var str1 = prompt("Enter the string");
+		str = str1.toUpperCase();
+		for (var i = 0; i < str.length; i++) {
+			var ch = str.charAt(i);
+			if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ){
+				document.write("Given string is : " + str1 + '<br>');
+				document.write("Leftmost index of the of the vowel is : "+(i+1));
+				break;
+			}
+		}
+	</script>
+</body>
+</html>
