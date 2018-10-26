@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Reverse of a Number</title>
+    <title>Reverse of a Number</title>
 </head>
 <body>
-	<script type="text/javascript">
-			var str1 = prompt("Enter the number");
-			var newstr = ""
-			// Logic 1
-			for (var i = str1.length - 1; i >= 0; i--) {
-				newstr += str1[i];
-			}
-
-			// Logic 2
-			prompt(str1.split('').reverse().join(''));
-	</script>
+<script type="text/javascript">
+    let str1 = prompt("Enter the number");
+    let newstr = "";
+    // Logic 1
+    for (let i = str1.length - 1; i >= 0; i--) {
+        newstr += str1[i];
+    }
+    document.write("Original Number : " + str1 + "<br>Reversed Number : " + newstr);
+    // Logic 2
+    // prompt(str1.split('').reverse().join(''));
+</script>
 </body>
 </html>
