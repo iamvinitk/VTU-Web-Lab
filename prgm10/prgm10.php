@@ -31,24 +31,24 @@ if ($conn) {
 
 $sql = "SELECT * from student_table";
 $result = $conn->query($sql);
-echo "<br>";
-echo "<div style=\"text-align: center;\">Before Sorting</div>";
-echo "<table border = 2>";
-echo "<tr><th>USN</th><th>NAME</th><th>ADDRESS</th></tr>";
+print "<br>";
+print "<div style=\"text-align: center;\">Before Sorting</div>";
+print "<table border = 2>";
+print "<tr><th>USN</th><th>NAME</th><th>ADDRESS</th></tr>";
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        echo "<tr>";
-        echo "<td>" . $row["usn"] . "</td>";
-        echo "<td>" . $row["name"] . "</td>";
-        echo "<td>" . $row["address"] . "</td>";
+        print "<tr>";
+        print "<td>" . $row["usn"] . "</td>";
+        print "<td>" . $row["name"] . "</td>";
+        print "<td>" . $row["address"] . "</td>";
         array_push($a, $row["usn"]);
         array_push($b, $row["name"]);
         array_push($c, $row["address"]);
     }
 } else {
-    echo "Table is empty";
+    print "Table is empty";
 }
-echo "</table><br><br>";
+print "</table><br><br>";
 $n = count($a);
 for ($i = 0; $i < $n; $i++) {
     for ($j = $i+1; $j < $n; $j++) {
@@ -65,16 +65,16 @@ for ($i = 0; $i < $n; $i++) {
         }
     }
 }
-echo "<div style=\"text-align: center;\">After Sorting</div>";
-echo "<table border = 2>";
-echo "<tr><th>USN</th><th>NAME</th><th>ADDRESS</th></tr>";
+print "<div style=\"text-align: center;\">After Sorting</div>";
+print "<table border = 2>";
+print "<tr><th>USN</th><th>NAME</th><th>ADDRESS</th></tr>";
 for ($i = 0; $i < $n; $i++) {
-    echo "<tr>";
-    echo "<td>" . $a[$i] . "</td>";
-    echo "<td>" . $b[$i] . "</td>";
-    echo "<td>" . $c[$i] . "</td></tr>";
+    print "<tr>";
+    print "<td>" . $a[$i] . "</td>";
+    print "<td>" . $b[$i] . "</td>";
+    print "<td>" . $c[$i] . "</td></tr>";
 }
-echo "</table>";
+print "</table>";
 ?>
 </body>
 </html>

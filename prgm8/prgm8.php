@@ -25,10 +25,10 @@
 
 
     if (isset($_POST["v1"]) and isset($_POST["v2"])) {
-        echo "Addition : " . ($a) . " + " . ($b) . " = " . ($a + $b) . "<br>";
-        echo "Subtraction : " . ($a) . " - " . ($b) . " = " . ($a - $b) . "<br>";
-        echo "Multiplication : " . ($a) . " * " . ($b) . " = " . ($a * $b) . "<br>";
-        echo "Division : " . ($a) . " / " . ($b) . " = " . ($a / $b) . "<br>";
+        print "Addition : " . ($a) . " + " . ($b) . " = " . ($a + $b) . "<br>";
+        print "Subtraction : " . ($a) . " - " . ($b) . " = " . ($a - $b) . "<br>";
+        print "Multiplication : " . ($a) . " * " . ($b) . " = " . ($a * $b) . "<br>";
+        print "Division : " . ($a) . " / " . ($b) . " = " . ($a / $b) . "<br>";
     }
     ?>
 
@@ -43,57 +43,57 @@ $b = array(array(9, 8, 7), array(6, 5, 4), array(3, 2, 1));
 
 $row = count($a);
 $col = count($a[0]);
-echo "<h4>The two matrices are:</h4>";
-echo "<pre>A          B<br>";
+print "<h4>The two matrices are:</h4>";
+print "<pre>A          B<br>";
 for ($i = 0; $i < $row; $i++) {
     for ($j = 0; $j < $col; $j++) {
-        echo ($a[$i][$j]) . " ";
+        print ($a[$i][$j]) . " ";
     }
-    echo "     ";
+    print "     ";
     for ($j = 0; $j < $col; $j++) {
-        echo ($b[$i][$j]) . " ";
+        print ($b[$i][$j]) . " ";
     }
 
-    echo "<br>";
+    print "<br>";
 }
-echo "</pre>";
+print "</pre>";
 
-echo "<h2>8b. Transpose of a Matrix</h2>";
-echo "<pre>A<sup>t</sup>         B<sup>t</sup><br>";
+print "<h2>8b. Transpose of a Matrix</h2>";
+print "<pre>A<sup>t</sup>         B<sup>t</sup><br>";
 for ($i = 0; $i < $row; $i++) {
     for ($j = 0; $j < $col; $j++) {
-        echo ($a[$j][$i]) . " ";
+        print ($a[$j][$i]) . " ";
     }
-    echo "     ";
+    print "     ";
     for ($j = 0; $j < $col; $j++) {
-        echo ($b[$j][$i]) . " ";
+        print ($b[$j][$i]) . " ";
     }
 
-    echo "<br>";
+    print "<br>";
 }
-echo "</pre><br>";
+print "</pre><br>";
 
-echo "<h2>8c. Multiplication of two Matrices</h2>";
-echo "<pre>(AxB)<br>";
+print "<h2>8c. Multiplication of two Matrices</h2>";
+print "<pre>(AxB)<br>";
 for ($i = 0; $i < $row; $i++) {
     for ($j = 0; $j < $col; $j++) {
         $sum = 0;
         for ($k = 0; $k < $col; $k++) {
             $sum = $sum + ($a[$i][$k] * $b[$k][$j]);
         }
-        echo $sum . " ";
+        print $sum . " ";
     }
-    echo "<br>";
+    print "<br>";
 }
-echo "</pre><br>";
+print "</pre><br>";
 
-echo "<h2>8d. Addition of two Matrices</h2>";
-echo "<pre>(A+B)<br>";
+print "<h2>8d. Addition of two Matrices</h2>";
+print "<pre>(A+B)<br>";
 for ($i = 0; $i < $row; $i++) {
     for ($j = 0; $j < $col; $j++) {
-        echo ($a[$i][$j] + $b[$i][$j]) . " ";
+        print ($a[$i][$j] + $b[$i][$j]) . " ";
     }
-    echo "<br>";
+    print "<br>";
 }
-echo "</pre><br>";
+print "</pre><br>";
 ?>
